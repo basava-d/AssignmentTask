@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductNameTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="ProductNameTableViewCell" customModule="RedMartAssignmentTaskApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDD-2n-3KI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Nvj-vm-R85"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayp-8F-nZk">
+                        <rect key="frame" x="10" y="10" width="300" height="23.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giv-df-R2f">
+                        <rect key="frame" x="10" y="37.5" width="300" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1Ee-P4-m2F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TDD-2n-3KI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7gA-EI-rTP"/>
+                    <constraint firstAttribute="trailing" secondItem="Ayp-8F-nZk" secondAttribute="trailing" constant="10" id="7iu-fJ-Z8t"/>
+                    <constraint firstItem="Ayp-8F-nZk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="89e-C8-uMX"/>
+                    <constraint firstAttribute="trailing" secondItem="giv-df-R2f" secondAttribute="trailing" constant="10" id="8JW-Qx-Ug5"/>
+                    <constraint firstItem="giv-df-R2f" firstAttribute="top" secondItem="Ayp-8F-nZk" secondAttribute="bottom" constant="4" id="Y9Q-Tq-2Rs"/>
+                    <constraint firstItem="giv-df-R2f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZIi-rN-JaA"/>
+                    <constraint firstAttribute="trailing" secondItem="TDD-2n-3KI" secondAttribute="trailing" id="dMS-dT-B3M"/>
+                    <constraint firstItem="TDD-2n-3KI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hjz-4A-ODA"/>
+                    <constraint firstItem="Ayp-8F-nZk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lZk-g7-Qhu"/>
+                    <constraint firstAttribute="bottom" secondItem="giv-df-R2f" secondAttribute="bottom" constant="10" id="mVb-vg-j3z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="Ayp-8F-nZk" id="4Mg-wI-RVQ"/>
+                <outlet property="weightLabel" destination="giv-df-R2f" id="QPd-h9-o7t"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="68"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductItemsTableViewCell" rowHeight="228" id="KGk-i7-Jjw" customClass="ProductItemsTableViewCell" customModule="RedMartAssignmentTaskApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="226.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqP-w9-bnK">
+                        <rect key="frame" x="10" y="10" width="300" height="182.5"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zCP-lD-qeU">
+                                <rect key="frame" x="10" y="10" width="280" height="162.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="4" minimumInteritemSpacing="4" id="k6D-QV-x41">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="4" minY="4" maxX="4" maxY="4"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zCP-lD-qeU" firstAttribute="top" secondItem="yqP-w9-bnK" secondAttribute="top" constant="10" id="KZy-fy-Q4Y"/>
+                            <constraint firstAttribute="bottom" secondItem="zCP-lD-qeU" secondAttribute="bottom" constant="10" id="Vxv-8k-7fq"/>
+                            <constraint firstAttribute="trailing" secondItem="zCP-lD-qeU" secondAttribute="trailing" constant="10" id="pAz-bn-Cx2"/>
+                            <constraint firstItem="zCP-lD-qeU" firstAttribute="leading" secondItem="yqP-w9-bnK" secondAttribute="leading" constant="10" id="udX-hN-KFA"/>
+                        </constraints>
+                    </view>
+                    <pageControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vln-ug-caw">
+                        <rect key="frame" x="10" y="196.5" width="300" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JY7-sS-ju3"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="currentPageIndicatorTintColor" red="0.94516080617904663" green="0.28391930460929871" blue="0.36629265546798706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <gestureRecognizers/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Vln-ug-caw" secondAttribute="bottom" constant="10" id="COv-um-gFP"/>
+                    <constraint firstAttribute="trailing" secondItem="Vln-ug-caw" secondAttribute="trailing" constant="10" id="DWa-BG-uIU"/>
+                    <constraint firstItem="Vln-ug-caw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GbV-FA-507"/>
+                    <constraint firstItem="yqP-w9-bnK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NmA-FB-YAK"/>
+                    <constraint firstItem="Vln-ug-caw" firstAttribute="top" secondItem="yqP-w9-bnK" secondAttribute="bottom" constant="4" id="X4f-K0-ZnM"/>
+                    <constraint firstItem="yqP-w9-bnK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bsX-cF-gFx"/>
+                    <constraint firstAttribute="trailing" secondItem="yqP-w9-bnK" secondAttribute="trailing" constant="10" id="sCi-s5-GPs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="zCP-lD-qeU" id="BHV-KO-w7W"/>
+                <outlet property="pageControl" destination="Vln-ug-caw" id="Bzu-hJ-CUS"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="77.5"/>
+        </tableViewCell>
+    </objects>
+</document>
